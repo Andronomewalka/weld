@@ -13,50 +13,74 @@ body {
     color: #efeae1;
 }
 
-#header-holder {
-    position: fixed;
+.wrapper {
+    padding: 100px 10% 0;
+    min-height: 100%;
+    background-image: radial-gradient(ellipse at 20% 75%, #3a3f45, #393e46 15%, #343233);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#welcome-screen-grid {
     display: flex;
     align-items: center;
-    padding: 0 25px;
-    height: 55px;
-    width: 100%;
-    background: #584b4f;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 
-#logo {
-    flex: 1;
-    height: 90%;
-    background: url(../img/logo.jpg) no-repeat cover;
+.welcome-text-holder {
+    flex-basis: 250px;
+    flex-shrink: 1;
+    text-align: justify;
 }
 
-#navigation-container {
-    flex: 7;
-    text-align: right;
+.headline {
+    text-align: center;
+    border-top: 3px solid #efdab9;
+    border-bottom: 3px solid #efdab9;
 }
 
-#navigation {
-    padding-right: 100px;
+.welcome-pic-container {
+    flex-basis: 600px;
+    flex-shrink: 0.2;
+    align-self: stretch;
+    margin-bottom: 30px;
 }
 
-.button {
-    width: 50px;
-    height: 100%;
-    margin: 0 10px;
-    vertical-align: middle;
-    text-decoration: none;
-    color: #efeae1;
-    transition: 0.2s;
+.welcome-pic {
+    width: 130%;
+    margin-left: -250px;
 }
 
-.button:hover {
-    color: #3b9b6d;
-    transition: 0.2s;
+
+/* .welcome-pic-container {
+    flex-basis: 600px;
+    align-self: stretch;
+    flex-shrink: 1;
+    margin-bottom: 30px;
+    position: relative
 }
 
-.wrapper {
-    min-height: 100%;
-}
+.welcome-pic {
+    width: 130%;
+    position: absolute;
+    top: 0;
+    right: 50px;
+} */
 
-#welcome-screen {
-    height: 200vh;
+@media (max-width:1079px) {
+    .welcome-pic-container {
+        flex-basis: 500px;
+        align-self: stretch;
+        margin-bottom: 30px;
+    }
+    .welcome-pic {
+        width: 100%;
+        margin-left: 0;
+    }
+    .wrapper {
+        padding-top: 50px;
+    }
 }

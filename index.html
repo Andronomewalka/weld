@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
     <link href="css/index-style.css" rel="stylesheet">
     <title>Сварка</title>
 </head>
@@ -14,15 +14,25 @@
         <div id="logo"></div>
         <div id="navigation-container">
             <nav id="navigation">
-                <a href="index.html#welcome-section" class="button"> Главная </a>
-                <a href="index.html#welcome-section" class="button"> Прайслист </a>
-                <a href="index.html#welcome-section" class="button"> Контакты </a>
+                <a href="index.html#welcome-section" class="navigation-anchor"> Главная </a>
+                <a href="index.html#welcome-section" class="navigation-anchor"> Прайслист </a>
+                <a href="index.html#welcome-section" class="navigation-anchor"> Контакты </a>
             </nav>
         </div>
     </header>
     <div class="wrapper">
-        <section id="welcome-screen">
-
+        <section id="welcome-screen-grid">
+            <div class="welcome-pic-container">
+                <img class="welcome-pic" src="img/welcome-pic.png"></img>
+            </div>
+            <div class="welcome-text-holder">
+                <h2 class="headline"> Норм сварщик </h2>
+                <ul>
+                    <li> Недорого </li>
+                    <li> Вежливо </li>
+                    <li> качественно </li>
+                </ul>
+            </div>
         </section>
     </div>
 </body>

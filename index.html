@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -11,27 +11,51 @@
 
 <body>
     <header id="header-holder">
-        <div id="logo"></div>
+        <img id="logo" src="img/logo.svg" alt="logo"></img>
         <div id="navigation-container">
             <nav id="navigation">
-                <a href="index.html#welcome-section" class="navigation-anchor"> Главная </a>
-                <a href="index.html#welcome-section" class="navigation-anchor"> Прайслист </a>
-                <a href="index.html#welcome-section" class="navigation-anchor"> Контакты </a>
+                <a href="#welcome-section" class="navigation-anchor"> Главная </a>
+                <a href="#pricelist-section" class="navigation-anchor"> Прайс-лист </a>
+                <a href="#welcome-section" class="navigation-anchor"> Контакты </a>
             </nav>
         </div>
     </header>
     <div class="wrapper">
-        <section id="welcome-screen-grid">
+        <section id="welcome-section">
             <div class="welcome-pic-container">
-                <img class="welcome-pic" src="img/welcome-pic.png"></img>
+                <img class="welcome-pic" src="https://imgc.allpostersimages.com/img/print/u-g-Q115XGT0.jpg?w=550&h=550&p=0" alt="welder"></img>
             </div>
             <div class="welcome-text-holder">
-                <h2 class="headline"> Норм сварщик </h2>
+                <h2 class="center borders"> Норм сварщик </h2>
                 <ul>
                     <li> Недорого </li>
                     <li> Вежливо </li>
                     <li> качественно </li>
                 </ul>
+            </div>
+        </section>
+        <section id="pricelist-section">
+            <h1 class="center"> Прайс-лист</h1>
+            <p class="center"> Предоставляем широкий спектр сварочных услуг </p>
+            <div class="services-container borders">
+                <h2 class="service-name"> Заборы </h2>
+                <div class="service-image-container">
+                    <div class="service-image">
+                        <img src="img/box_img1.jpg">
+                    </div>
+                    <div class="service-image">
+                        <img src="img/box_img2.jpg">
+                    </div>
+                    <div class="service-image">
+                        <img src="img/box_img3.jpg">
+                    </div>
+                    <div class="service-image">
+                        <img src="img/box_img4.jpg">
+                    </div>
+                </div>
+                <div class="service-price">
+                    <span> 3000 </span>
+                </div>
             </div>
         </section>
     </div>

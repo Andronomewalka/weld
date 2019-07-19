@@ -14,73 +14,113 @@ body {
 }
 
 .wrapper {
-    padding: 100px 10% 0;
+    padding: 0 10% 0;
     min-height: 100%;
     background-image: radial-gradient(ellipse at 20% 75%, #3a3f45, #393e46 15%, #343233);
     margin: 0 auto;
     overflow: hidden;
 }
 
-#welcome-screen-grid {
+#welcome-section {
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     height: 100vh;
+}
+
+#pricelist-section {
+    height: 100vh;
+    padding-top: 40px;
+    text-align: center;
 }
 
 .welcome-text-holder {
     flex-basis: 250px;
     flex-shrink: 1;
     text-align: justify;
+    margin-left: 30px;
 }
 
-.headline {
+.center {
     text-align: center;
+}
+
+.borders {
     border-top: 3px solid #efdab9;
     border-bottom: 3px solid #efdab9;
 }
 
 .welcome-pic-container {
     flex-basis: 600px;
-    flex-shrink: 0.2;
+    flex-shrink: 0.7;
     align-self: stretch;
-    margin-bottom: 30px;
+    margin: 0 30px 30px 0;
 }
 
 .welcome-pic {
-    width: 130%;
-    margin-left: -250px;
+    width: 100%;
+    margin-left: -30%;
 }
 
-
-/* .welcome-pic-container {
-    flex-basis: 600px;
-    align-self: stretch;
-    flex-shrink: 1;
-    margin-bottom: 30px;
-    position: relative
+.services-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    padding: 5px;
+    width: 100%;
 }
 
-.welcome-pic {
-    width: 130%;
-    position: absolute;
-    top: 0;
-    right: 50px;
-} */
+.service-image,
+.service-name,
+.service-price {
+    margin: 0.7vh 1vh;
+}
 
-@media (max-width:1079px) {
+.service-image-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.service-price,
+.service-name {
+    flex-basis: 100%;
+}
+
+.service-price {
+    text-align: right;
+}
+
+.service-price:before {
+    content: "Цена: ";
+}
+
+.service-price:after {
+    content: " грн";
+}
+
+@media (max-width:1200px) {
     .welcome-pic-container {
-        flex-basis: 500px;
-        align-self: stretch;
-        margin-bottom: 30px;
+        margin: 25px 0 0 0;
     }
     .welcome-pic {
-        width: 100%;
         margin-left: 0;
     }
-    .wrapper {
-        padding-top: 50px;
+}
+
+@media (max-width:1079px) {
+    .welcome-text-holder {
+        margin-left: 0;
+    }
+}
+
+@media (max-width:436px) {
+    #pricelist-section {
+        height: 130vh;
     }
 }
